@@ -1,0 +1,129 @@
+@import '../../assets/css-variable/light-theme.less';
+@import '../../assets/css-variable/dark-theme.less';
+@import '../../assets/css-variable/common-event-variable.less';
+
+
+
+.company_logo,
+.navBar_container {
+  display: inline-block;
+}
+
+.company_logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    color: @white;
+  }
+}
+
+.navBar_container {
+  font-size: 24px;
+  background-color: @primary-color !important;
+  border-bottom: none !important;
+
+  svg {
+    cursor: pointer;
+  }
+
+  .ant-menu {
+    font-size: 25px;
+
+    .ant-menu-overflow-item {
+      padding: 0 10px;
+
+      svg {
+        font-size: 20px;
+      }
+    }
+
+    div {
+      .ant-menu-title-content {
+        display: none;
+      }
+    }
+  }
+}
+
+.user-setting {
+  padding: 0 !important;
+  color: @white;
+  border-bottom: none !important;
+  svg {
+    font-size: 22px !important;
+  }
+  span {
+    display: none;
+  }
+}
+
+.ant-menu-light .ant-menu-submenu-title:hover {
+  color: rgb(74, 147, 250) !important;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open {
+  color: rgb(74, 147, 250) !important;
+}
+
+.toggle_theme {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 8px;
+  padding-right: 12px;
+  span {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+}
+
+.user-setting-item {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  svg {
+    font-size: 22px;
+  }
+}
+
+
+.dark-theme .navBar_container {
+  background-color: @primary-color-dark !important;
+}
+
+.user-setting_items.dark-theme {
+  background-color: @primary-color-dark !important;
+}
+
+.dark-theme .ant-menu-sub{
+  background-color: @primary-color-dark !important;
+  
+  li:hover {
+    span {
+      color: @primary-color;
+    }
+  }
+
+  .toggle_theme {
+    color: @icon-color-dark;
+  }
+  .ant-menu-title-content {
+    color: @text-color-dark;
+  }
+}
+
+.ant-menu-sub .ant-menu-item-selected {
+  background-color: transparent !important;
+}

@@ -1,0 +1,62 @@
+@import '../../../../assets/css-variable/light-theme.less';
+@import '../../../../assets/css-variable/dark-theme.less';
+@import '../../../../assets/css-variable/common-event-variable.less';
+
+.ant-list-item {
+  span {
+    border: none;
+  }
+}
+
+.project-info {
+  padding-left: 15px;
+
+  .ant-tag {
+    color: @white;
+    border-radius: 200px;
+    font-weight: 500;
+  }
+  .project-members {
+    max-width: 420px;
+    background-color: @project-members;
+  }
+
+  .project-activeMember {
+    background-color: @project-activeMember;
+  }
+
+  .project-projectType {
+    background-color: @project-projectType;
+  }
+
+  .project-duration {
+    background-color: @project-duration;
+  }
+
+  > span {
+    margin-right: 5px;
+  }
+}
+
+.project-action-container {
+  padding-right: 15px;
+  .ant-tag {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 15px;
+    color: @white;
+    font-weight: 500;
+  }
+  .project-action-btn {
+    height: 38px !important;
+    border: none;
+    border-radius: 4px !important; 
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  }
+  .project-status-active {
+    background-color: @project-active;
+  }
+  .project-status-inactive {
+    background-color: @project-inactive;
+  }
+}

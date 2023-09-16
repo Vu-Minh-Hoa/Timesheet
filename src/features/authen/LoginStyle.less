@@ -1,0 +1,60 @@
+@import '../../assets/css-variable/light-theme.less';
+@import '../../assets/css-variable/dark-theme.less';
+
+.login-page-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #00bcd4;
+  padding-top: 5%;
+
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  > div {
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+
+    > h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    > h1, span {
+      color: @white;
+    }
+
+    .copyright {
+      margin-top: 30px;
+    }
+
+    .form-container {
+      background-color: @white;
+      padding: 26px;
+      box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+      padding-right: 32px;
+      border-radius: 10px;
+
+      h2 {
+        font-size: 22px;
+        color: #555;
+        padding-left: 5px;
+        margin-bottom: 35px;
+      }
+
+      .submit-btn {
+        .ant-form-item-control-input-content {
+          margin-left: auto;
+          flex: unset;
+        }
+      }
+
+      .ant-form-item-label > label {
+        font-size: 15px;
+      }
+    }
+  }
+}

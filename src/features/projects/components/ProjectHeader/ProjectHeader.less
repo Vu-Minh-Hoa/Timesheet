@@ -1,0 +1,42 @@
+@import '../../../../assets/css-variable/light-theme.less';
+@import '../../../../assets/css-variable/dark-theme.less';
+@import '../../../../assets/css-variable/common-event-variable.less';
+
+.project-header-title {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.ant-divider-horizontal {
+  margin: 5px 0 !important;
+}
+
+.manage-project-action__container {
+  display: flex;
+  padding: 10px 20px;
+
+  button {
+    font-weight: 500;
+    margin-right: 140px;
+    border-radius: 3px;
+  }
+
+
+  .filter-container {
+    display: flex;
+  }
+
+  .ant-select {
+    margin-right: 20px; 
+    border-radius: 5px;
+    .ant-select-selector {
+      @selector();
+    }
+  }
+
+  .ant-input-group-addon {
+    display: none;
+    border-radius: 5px;
+  }
+}

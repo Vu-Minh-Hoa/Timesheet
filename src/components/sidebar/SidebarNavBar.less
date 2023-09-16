@@ -1,0 +1,82 @@
+@import '../../assets/css-variable/light-theme.less';
+@import '../../assets/css-variable/dark-theme.less';
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+
+  .isActive > li,
+  .isActive > li svg {
+    pointer-events: none;
+    transition: all 0.2s linear;
+    background-color: @sidebar-backgroundColor-active;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s linear;
+    color: @text-color;
+  }
+
+  li:hover {
+    cursor: pointer;
+    background-color: @sidebar-backgroundColor-hover; 
+  }
+
+  li svg {
+    font-size: 22px;
+    margin-right: 12px;
+    color: @text-color-secondary;
+  }
+}
+
+.user_info_container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('../../assets/img/user-img-background.jpg');
+  padding: 10px 18px;
+  min-width: 0;
+
+  > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 14px;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    line-break: anywhere;
+    color: @white;
+  }
+  div > span {
+    flex: 1;
+  }
+}
+
+.dark-theme{
+  .navBar {
+    .isActive > li,
+    .isActive > li svg {
+      background-color: @sidebar-item-active;
+    }
+    li { 
+      color: @text-color-dark;
+      svg {
+        color: @icon-color-dark;
+      }
+    }
+
+    li:hover { 
+      background-color: @sidebar-item-hover-dark;
+    }
+  }
+}
